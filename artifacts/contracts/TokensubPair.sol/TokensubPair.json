@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "TokensubPair",
+  "sourceName": "contracts/TokensubPair.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212200090f667c8e7da1dcdc02c7a0531b5d736f8870c8ac8b02864093a765ead091364736f6c63430008000033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212200090f667c8e7da1dcdc02c7a0531b5d736f8870c8ac8b02864093a765ead091364736f6c63430008000033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
