@@ -15,13 +15,13 @@ interface ITokensubERC20 {
 
     function decimals() external pure returns (uint8);
 
-    function totalSupply() external pure returns (uint256);
+    function totalSupply() external view returns (uint256);
 
-    function balanceOf(address _owner) external pure returns (uint256);
+    function balanceOf(address _owner) external view returns (uint256);
 
     function allowance(address _owner, address _spender)
         external
-        pure
+        view
         returns (uint256);
 
     function approve(address _spender, uint256 _value) external returns (bool);
@@ -36,7 +36,7 @@ interface ITokensubERC20 {
 
     function DOMAIN_SEPARATOR() external view returns (bytes32);
 
-    function PERMIT_TYPEHASH() external view returns (bytes32);
+    function PERMIT_TYPEHASH() external pure returns (bytes32);
 
     function nonces(address _owner) external view returns (uint256);
 
