@@ -116,6 +116,8 @@ contract TokensubERC20 is ITokensubERC20 {
         return true;
     }
 
+    // Enables gasless ERC-20 token transfer for the sender. Called by the recipient which submits on behalf of the owner
+    // Recipient needs to verify that address of the sender from the sender's signature(r,s,v)
     function permit(
         address owner,
         address spender,
@@ -142,6 +144,7 @@ contract TokensubERC20 is ITokensubERC20 {
                 )
             )
         );
+        // retrieve the signer's address
         address recoveredAddress = ecrecover(digest, v, r, s);
         require(
             recoveredAddress != address(0) && recoveredAddress == owner,
